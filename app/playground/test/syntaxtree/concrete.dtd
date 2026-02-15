@@ -1,0 +1,21 @@
+<!DOCTYPE expr [
+
+<!ELEMENT expr (add|sub|et|null)>
+<!ELEMENT add (expr, term)>
+<!ELEMENT sub (expr, term)>
+<!ELEMENT et (term)>
+
+<!ELEMENT term (mul|div|tf|null)>
+<!ELEMENT mul (term, factor)>
+<!ELEMENT div (term, factor)>
+<!ELEMENT tf (factor)>
+
+<!ELEMENT factor (num|neg|fe|null)>
+<!ELEMENT num (#PCDATA)>
+<!ELEMENT neg (factor)>
+<!ELEMENT fe (expr)>
+
+<!ELEMENT null EMPTY>
+
+]>
+

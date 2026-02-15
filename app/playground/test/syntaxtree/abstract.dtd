@@ -1,0 +1,10 @@
+<!DOCTYPE arith [
+
+<!ELEMENT arith (add|sub|mul|num)>
+<!ELEMENT add (arith, arith)>
+<!ELEMENT sub (arith, arith)>
+<!ELEMENT mul (arith, arith)>
+<!ELEMENT num (#PCDATA)>
+
+]>
+

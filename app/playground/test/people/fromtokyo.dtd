@@ -1,0 +1,6 @@
+<!DOCTYPE fromtokyo [
+
+<!ELEMENT fromtokyo (name*)>
+<!ELEMENT name (#PCDATA)>
+
+]>

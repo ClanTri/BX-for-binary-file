@@ -1,0 +1,11 @@
+<!DOCTYPE xbel [
+
+<!ELEMENT xbel (title,(bookmark|folder)*)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT bookmark (title)>
+<!ELEMENT folder (title,(bookmark|folder)*)>
+<!ELEMENT title (#PCDATA)>
+
+<!ATTLIST bookmark href CDATA #REQUIRED>
+
+]>

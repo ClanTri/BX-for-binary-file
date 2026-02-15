@@ -1,0 +1,17 @@
+resolver: lts-7.24
+
+packages:
+  - .
+
+extra-deps:
+  - BiGUL-1.0.1
+  - mtl-2.2.1
+  - haskell-say-1.0.0.0@sha256:654ed7ff571d62fb03dfda576aa0a89410fe403b0d84695b5151e3d026f33099,1330
+  - xml-conduit-1.9.1.4
+  - resourcet-1.1.10
+  - unliftio-core-0.1.2.0@sha256:b0a7652ffce2284a6cebe05c99eb60573a8fb6631163f34b0b30a80b4a78cb23,1081
+  - conduit-extra-1.1.17
+  - conduit-1.2.12
+allow-newer: true
+ghc-options:
+  "$everything": -optc-std=c99 -optc-D__STDC_LIMIT_MACROS -optP-encoding=UTF-8

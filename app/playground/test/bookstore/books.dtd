@@ -1,0 +1,8 @@
+<!DOCTYPE books [
+
+<!ELEMENT books (book*)>
+<!ELEMENT book (title,price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+]>

@@ -1,0 +1,9 @@
+<!DOCTYPE sections [
+
+<!ELEMENT sections (section*)>
+<!ELEMENT section (title,paragraph?,subsection*)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT paragraph (#PCDATA)>
+<!ELEMENT subsection (title,paragraph?)>
+
+]>

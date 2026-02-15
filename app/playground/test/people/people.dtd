@@ -1,0 +1,8 @@
+<!DOCTYPE people [
+
+<!ELEMENT people (person*)>
+<!ELEMENT person (name,city)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+
+]>

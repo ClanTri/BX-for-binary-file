@@ -1,0 +1,15 @@
+<!DOCTYPE html [
+
+<!ELEMENT html (head,body)>
+<!ELEMENT head (#PCDATA)>
+<!ELEMENT body (h1,dl)>
+<!ELEMENT h1 (#PCDATA)>
+<!ELEMENT dl ((dt|dd)*)>
+<!ELEMENT dt (a)>
+<!ELEMENT a (#PCDATA)>
+<!ELEMENT dd (h3,dl)>
+<!ELEMENT h3 (#PCDATA)>
+
+<!ATTLIST a href CDATA #REQUIRED>
+
+]>

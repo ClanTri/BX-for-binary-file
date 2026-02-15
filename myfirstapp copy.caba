@@ -1,0 +1,101 @@
+cabal-version:      1.24
+name:               myfirstapp
+version:            0.1.0.0
+license:            NONE
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+executable sync_test
+    main-is:          MainExec.hs
+    other-modules:
+        Sync_Multi_Rearr_test
+        Sync_Multi_Rearr_test_Switched                 
+        DataStructs
+    build-depends:
+        base >=4.10 && <5,
+        haskell-say >=1.0.0.0,
+        BiGUL >=1.0.1,
+        mtl >=2.2.2,
+        containers,
+        xml-conduit,
+        xml-types, 
+        aeson,
+        mongoDB >=2.3.1,
+        postgresql-simple,
+        text >= 1.2,
+        bytestring >= 0.10,
+        process >= 1.6.5 && < 1.7,
+        mongoDB >= 2.3.0 && <= 2.7.1.4,
+        binary,
+        random,
+        template-haskell,
+        deepseq >= 1.4 
+    hs-source-dirs:   app
+    default-language: Haskell2010
+    ghc-options: -Wall
+    
+
+
+executable data_make_both
+    main-is:          Data_make_both.hs
+    hs-source-dirs:   app
+    build-depends:
+        base >=4.10 && <5,
+        bytestring,
+        text,
+        random,
+        containers,
+        mongoDB >=2.3.1,
+        postgresql-simple,
+        aeson,
+        xml-conduit,
+        xml-types,
+        filepath,
+        directory,
+        time,
+        bytestring,
+        text,
+        blaze-builder,
+        deepseq,
+        transformers,
+        mtl
+    default-language: Haskell2010
+    ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+
+benchmark sync-bench
+  type: exitcode-stdio-1.0
+  main-is: Bench.hs
+  other-modules:
+      Sync_Multi_Rearr_test             
+      DataStructs
+  build-depends:
+      base >=4.10 && <5,
+      bytestring,
+      text,
+      containers,
+      aeson,
+      xml-conduit,
+      xml-types,
+      criterion >=1.3,
+      BiGUL >=1.0.1,
+      mtl >=2.2.2,
+      deepseq >=1.4, 
+      temporary, 
+      filepath, 
+      directory,
+      template-haskell
+  hs-source-dirs:   app
+  ghc-options: -O2 -rtsopts -with-rtsopts=-T
+  default-language: Haskell2010
+
+executable insert_to_db
+  main-is:          InsertToDB.hs
+  hs-source-dirs:   app
+  build-depends:
+      base >=4.10 && <5,
+      bytestring,
+      process,
+      text
+  default-language: Haskell2010
+  ghc-options: -Wall -O2
+  

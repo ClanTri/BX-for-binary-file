@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<books>
+  <book>
+    <title> Learn you Haskell for Great Good </title>
+    <price> 100.0 </price>
+  </book>
+</books>

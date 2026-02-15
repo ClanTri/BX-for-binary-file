@@ -1,0 +1,42 @@
+# resolver: lts-11.22  # GHC 8.2.2
+# resolver: lts-14.27  # GHC 8.6.5
+# resolver: lts-15.3  # GHC 8.8.2
+resolver: lts-11.22  # GHC 8.2.2
+
+packages:
+  - .
+
+extra-deps:
+  - E:\haskell_test\BiGUL-master
+#  - Cabal-3.0.2.0@sha256:caadad83e044cdd38770600fd380055ad1a8c87d454b1f9d0710c14834f8cbc2,27486
+# - Cabal-3.12.0.0@sha256:f4db0d1b6afe3474e2d2097e701a96f84596735a03768ee64b1d17362b12e587,13547
+  - haskell-say-1.0.0.0@sha256:654ed7ff571d62fb03dfda576aa0a89410fe403b0d84695b5151e3d026f33099,1330
+#  - Cabal-syntax-3.12.1.0@sha256:6dbb06fb08ff77520947fb4c1ef281c9cea5b8dc7fd9a41ad62273fa916cf4b2,7407
+#  - parsec-3.1.17.0@sha256:8407cbd428d7f640a0fff8891bd2f7aca13cebe70a5e654856f8abec9a648b56,5149
+# - containers-0.7@sha256:e9b5fdcc609159410d408c47e0be13663bb0b4a42a5183b52aa0ac9c99e1dfec,2668
+# - containers-0.6.8@sha256:bb2bec1bbc6b39a7c97cd95e056a5698ec45beb5d8feb6caae12af64e4bd823c,2670
+# - binary-0.8.9.2@sha256:03381e511429c44d13990c6d76281c4fc2468371cede4fe684b0c98d9b7d5f5a,6611
+# - text-1.2.4.0@sha256:8c24450feb8e3bbb7ea3e17af24ef57e85db077c4bf53e5bcc345b283d1b1d5b,10081
+  - mtl-2.2.2
+  - mongoDB-2.7.0.0
+  - xml-1.3.14
+  - text-1.2.4.0
+  - bytestring-0.10.8.2
+  - process-1.6.6.0
+
+flags:
+  postgresql-libpq:
+    use-pkg-config: false
+
+extra-include-dirs:
+  - "D:\\Program Files\\PostgreSQL\\include"
+  - "D:\\Program Files\\PostgreSQL\\include\\server"
+
+extra-lib-dirs:
+  - "D:\\Program Files\\PostgreSQL\\lib"
+
+# allow-newer: true
+#env:
+#  LANG: "en_US.UTF-8"
+#ghc-options:
+#  "$everything": -XOverloadedStrings

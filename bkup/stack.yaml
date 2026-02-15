@@ -1,0 +1,14 @@
+resolver: lts-7.24
+
+packages:
+  - .
+
+extra-deps:
+  - BiGUL-1.0.1
+  - mtl-2.2.1
+  - Cabal-3.12.0.0@sha256:f4db0d1b6afe3474e2d2097e701a96f84596735a03768ee64b1d17362b12e587,13547
+  - haskell-say-1.0.0.0@sha256:654ed7ff571d62fb03dfda576aa0a89410fe403b0d84695b5151e3d026f33099,1330
+  - xml-conduit-1.9.1.4
+allow-newer: true
+ghc-options:
+  "$everything": -optc-std=c99 -optc-D__STDC_LIMIT_MACROS -optP-encoding=UTF-8

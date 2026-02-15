@@ -1,0 +1,10 @@
+<!DOCTYPE secs [
+
+<!ELEMENT secs (sec*)>
+<!ELEMENT sec (subsec*)>
+<!ELEMENT subsec (EMPTY)>
+
+<!ATTLIST sec title CDATA #REQUIRED>
+<!ATTLIST subsec title CDATA #REQUIRED>
+
+]>
